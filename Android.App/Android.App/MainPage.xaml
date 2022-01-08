@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Android.App.MainPage">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Programare" Clicked="OnShopListAddedClicked"/>
+    </ContentPage.ToolbarItems>
+    
+    <StackLayout Margin="20,35,20,20">
+        <Frame Background="Beige" Padding="1" CornerRadius="10">
+            <Label FontSize="20" Padding="3,1,3,3" HorizontalTextAlignment="Center" FontAttributes="Italic">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="Bine ați venit la "/>
+                            <Span Text="LovelyPets!" FontAttributes="Italic,Bold" FontSize="30"/>
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </Frame>
+        <Frame Margin="10"
+       BorderColor="Black"
+       CornerRadius="40"
+       HeightRequest="300"
+       WidthRequest="250"
+       IsClippedToBounds="True"
+       HorizontalOptions="Center"
+       VerticalOptions="Center">
+            <Image Source="CabinetVeterinar.jpg"
+         Aspect="AspectFill"
+         Margin="-25" />
+        </Frame>
+        <Label Text="➡Fă o programare pentru animăluțul tău doar cu un click, iar noi o sa ne ocupăm de el!" FontSize="23" Padding="40,10,30,10"/>
+        
+    </StackLayout>
+
+</ContentPage>

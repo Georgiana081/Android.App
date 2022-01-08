@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Android.App.ListPage">
+    <ContentPage.Content xmlns:local="clr-namespace: Android.App">
+        <StackLayout Margin="20">
+            <Editor Placeholder="Introduceti numele dumneavoastra" Text="{Binding Description}" HeightRequest="50"/>
+            <Editor Placeholder="Tip animal" Text="{Binding Description1}" HeightRequest="50"/>
+            <Editor Placeholder="Rasa animal" Text="{Binding Description2}" HeightRequest="50"/>
+            <Editor Placeholder="Varsta animal" Text="{Binding Description3}" HeightRequest="50"/>
+            <Editor Placeholder="Problema animal" Text="{Binding Description4}" HeightRequest="50"/>
+            <Editor Placeholder="Introduceti data si ora la care doriti programare" Text="{Binding Description5}" HeightRequest="50"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button BackgroundColor="#2196F3" Text="Trimite"  WidthRequest="10" Clicked="OnSaveButtonClicked" />
+                <Button BackgroundColor="#2196F3"  Grid.Column="1" Text="Șterge" WidthRequest="10" Clicked="OnDeleteButtonClicked"/>
+                <ListView Grid.Row="1" Grid.ColumnSpan="2" x:Name="listView" Margin="20">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Detail="{Binding Description}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

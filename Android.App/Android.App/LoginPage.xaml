@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Android.App.LoginPage">
+    <ContentPage.Content>
+        <StackLayout Padding="60" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+
+            <Image Source="logo.png" WidthRequest="140" HeightRequest="140"></Image>
+            
+            <Entry x:Name="txtNume"  Placeholder="Nume" TextColor="Black" PlaceholderColor="Gray"></Entry>
+            <Entry x:Name="txtParola" Placeholder="Parola" IsPassword="True" TextColor="Black" PlaceholderColor="Gray"></Entry>
+            <Button
+                VerticalOptions="Center"
+                Text="Login"
+                TextColor="Black"
+                BackgroundColor="DodgerBlue"
+                BorderWidth="1.5"
+                CornerRadius="60"
+                Clicked="Button_Clicked">
+            </Button>
+
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Nu ai un cont? " TextColor="Gray"/>
+                        <Span Text="Înregistrează-te" TextColor="Gray" FontAttributes="Bold" TextDecorations="Underline"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

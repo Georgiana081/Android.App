@@ -9,7 +9,7 @@
             <Editor Placeholder="Rasa animal" Text="{Binding Description2}" HeightRequest="50"/>
             <Editor Placeholder="Varsta animal" Text="{Binding Description3}" HeightRequest="50"/>
             <Editor Placeholder="Problema animal" Text="{Binding Description4}" HeightRequest="50"/>
-            <Editor Placeholder="Introduceti data si ora la care doriti programare" Text="{Binding Description5}" HeightRequest="50"/>
+            <Editor Placeholder="Introduceti data la care doriti programare" Text="{Binding Description5}" HeightRequest="50"/>
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />

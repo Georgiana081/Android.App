@@ -32,7 +32,7 @@
          Aspect="AspectFill"
          Margin="-25" />
         </Frame>
-        <Label Text="➡Fă o programare pentru animăluțul tău doar cu un click, iar noi o sa ne ocupăm de el!" FontSize="23" Padding="40,10,30,10"/>
+        <Label Text="➡Fă o programare pentru animăluțul tău doar cu un click, iar noi o să ne ocupăm de el!" FontSize="23" Padding="40,10,30,10"/>
         
     </StackLayout>
 
